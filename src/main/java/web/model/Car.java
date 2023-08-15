@@ -9,7 +9,7 @@ public class Car {
 
     }
 
-    public Car(String model, String color, int win) {
+    public Car(String model, String color, int id) {
         this.model = model;
         this.color = color;
         this.id = id;

@@ -38,7 +38,7 @@ public class CarsController {
         return "cars/show";
     }
 
-    @GetMapping("/cars")
+    @GetMapping("/car")
     public String returnTheSpecifiedNumberOfMachines(@RequestParam(value = "count", defaultValue = "5") int count,
                                                      Model model){
         model.addAttribute("count", carService.returnTheSpecifiedNumberOfMachines(count));

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class CarDaoImpl {
+public class CarDaoImpl implements CarDao {
     private static int CARS_COUNT;
     private List<Car> cars;
 
