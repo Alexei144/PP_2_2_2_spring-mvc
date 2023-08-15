@@ -1,8 +1,6 @@
-package web.DAO;
+package web.dao;
 
 import org.springframework.stereotype.Component;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestParam;
 import web.model.Car;
 
 import java.util.ArrayList;
@@ -12,7 +10,7 @@ import java.util.stream.Collectors;
 @Component
 public class CarDaoImpl implements CarDao {
     private static int CARS_COUNT;
-    private List<Car> cars;
+    private final List<Car> cars;
 
     {
         cars = new ArrayList<>();
